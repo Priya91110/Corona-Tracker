@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>corona Virus</title>
+    <style>
+      body{
+        margin:0;
+        padding:0;
+        background-image:url("https://images.unsplash.com/photo-1585912812840-b457972f28d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y292aWQlMjB2aXJ1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60")
+
+      }
+      table{
+        text-align:center;
+      }
+      form{
+        text-align:center;
+        width:100%;
+        fornt-size:25px;
+      }
+      h1{
+        color:white;
+        font-family:cursive;
+      }
+      input{
+        width:50%;
+        float:left;
+        margin-top:30px;
+        margin-lefT:50px;
+        color:black;
+
+      }
+      button{
+
+        width:40%;
+        float:left;
+        margin-lefT:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Corona Virus Updated Report</h1>
+<div>
+    <form method="get">
+      <input class="f" name='country' type="search" class="form-control rounded" placeholder="Enter Country Name" aria-label="Search" aria-describedby="search-addon" /><br>
+      <button type="submit" class="btn btn-info">Update</buttton>
+    </form>
+   <br>
+   
+  </div>
+
+ <div>
+    <table class="table table-dark table-hover">
+            <tr>
+              <th scope="col">Continent</th>
+              <td>{{mydict.continent}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Country</th>
+              <td>{{mydict.country}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Population</th>
+              <td>{{mydict.population}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Tests</th>
+              <td>{{mydict.tests}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Cases</th>
+              <td>{{mydict.cases}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Active</th>
+              <td>{{mydict.active}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Recovered</th>
+              <td>{{mydict.recovered}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Deaths</th>
+              <td>{{mydict.deaths}}</td>
+
+            </tr>
+            <tr>
+              <th scope="col">Critical</th>
+              <td>{{mydict.critical}}</td>
+
+            </tr>
+
+    </table>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
